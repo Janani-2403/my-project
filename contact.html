@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Your Trip - Explore world</title>
+    <link rel="icon" href="C:\Users\janan\HTML\favicon.png">
+  <style>
+    body { font-family: Arial; background-color: #f0f8ff; margin: 0; }
+    header, footer { background-color: #2e8b57; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #228b22; padding: 10px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 15px; font-weight: bold; }
+    section { padding: 20px; max-width: 500px; margin: auto; }
+    input, textarea, select {
+      width: 100%; padding: 10px; margin: 10px 0;
+      border-radius: 5px; border: 1px solid #ccc;
+    }
+    label { font-weight: bold; }
+    input[type="submit"] {
+      background-color: #2e8b57; color: white; border: none; cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #1e6b40;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Book Your Adventure</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="culture.html">Culture</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Booking</a>
+  </nav>
+
+  <section>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="destination">Preferred Destination:</label>
+      <select id="destination" name="destination" required>
+        <option value="">-- Select --</option>
+        <option value="kerala">Kerala</option>
+        <option value="kanniyakumari">Kanniyakumari</option>
+        <option value="Kashmir">Kashmir</option>
+        <option value="ooty">Ooty</option>
+        <option value="mysore">Mysore</option>
+                <option value="new delhi">New Delhi</option>
+
+      </select>
+
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="travelers">Number of Travelers:</label>
+      <input type="number" id="travelers" name="travelers" min="1" required>
+
+      <label for="message">Special Requests:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write any preferences or notes..."></textarea>
+
+      <input type="submit" value="Submit Booking Request">
+    </form>
+  </section>
+
+  <footer>
+    <div class="nav-buttons" style="text-align: center; margin: 30px 0;">
+  <a href="gallery.html" style="text-decoration: none; margin-right: 20px;">
+    <button style="padding: 10px 20px; background-color: #228b22; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      ← Previous
+    </button>
+  </a>
+</div>
+
+    <p>&copy; 2025 Explore Travel</p>
+  </footer>
+
+</body>
+</html>
